@@ -1,0 +1,265 @@
+  <!DOCTYPE html>
+  <html>
+      <body>
+
+		<table border="1">
+			<tr>
+			<td>Instrucao</td>
+			<td>Ciclos de Execucao</td>
+			</tr>		     
+		      <td>FP_ADD/SUB</td>
+			<td>                       
+			<form name="Menu">
+			  <select onclick="GetLatenciaFP_ADD_SUB()" id="ciclo_FP_ADD/SUB"name="pages" size="1" onChange="vai(this);">
+			    <option value="1">1
+		        <option value="2">2
+			    <option value="3">3
+		       	<option value="4">4
+				<option value="5">5
+				<option value="6">6
+				<option value="7">7
+				<option value="8">8
+				<option value="9">9
+				<option value="10">10
+				<option value="11">11
+				<option value="12">12
+				<option value="13">13
+				<option value="14">14
+				<option value="15">15
+				<option value="16">16
+				<option value="17">17
+				<option value="18">18
+				<option value="19">19
+				<option value="20">20
+			 </select>
+		      </form>
+		     </td>
+		</tr>
+		    <tr>
+		     <td>INT_Divide</td>
+			<td>                       
+			<form name="Menu">
+			  <select onclick="GetLatenciaINT_DIV()"id="ciclo_INT_DIV"name="pages" size="1" onChange="vai(this);">
+			    <option value="1">1
+		        <option value="2">2
+			    <option value="3">3
+		       	<option value="4">4
+				<option value="5">5
+				<option value="6">6
+				<option value="7">7
+				<option value="8">8
+				<option value="9">9
+				<option value="10">10
+				<option value="11">11
+				<option value="12">12
+				<option value="13">13
+				<option value="14">14
+				<option value="15">15
+				<option value="16">16
+				<option value="17">17
+				<option value="18">18
+				<option value="19">19
+				<option value="20">20
+			 </select>
+		      </form>
+		     </td>
+		  </tr>
+		  <tr>
+		     <td>FP_MULT</td>
+			<td>                       
+			<form name="Menu">
+			  <select onclick="GetLatenciaFP_MULT()"id="ciclo_FP_MULT"name="pages" size="1" onChange="vai(this);">
+			    <option value="1">1
+		        <option value="2">2
+			    <option value="3">3
+		       	<option value="4">4
+				<option value="5">5
+				<option value="6">6
+				<option value="7">7
+				<option value="8">8
+				<option value="9">9
+				<option value="10">10
+				<option value="11">11
+				<option value="12">12
+				<option value="13">13
+				<option value="14">14
+				<option value="15">15
+				<option value="16">16
+				<option value="17">17
+				<option value="18">18
+				<option value="19">19
+				<option value="20">20
+			 </select>
+		      </form>
+		     </td>
+		  </tr>
+		  <tr>
+		     <td>FP_Divide</td>
+			<td>                       
+			<form name="Menu">
+			  <select onclick="GetLatenciaFP_DIV()"id="ciclo_FP_DIV"name="pages" size="1" onChange="vai(this);">
+			    <option value="1">1
+		        <option value="2">2
+			    <option value="3">3
+		       	<option value="4">4
+				<option value="5">5
+				<option value="6">6
+				<option value="7">7
+				<option value="8">8
+				<option value="9">9
+				<option value="10">10
+				<option value="11">11
+				<option value="12">12
+				<option value="13">13
+				<option value="14">14
+				<option value="15">15
+				<option value="16">16
+				<option value="17">17
+				<option value="18">18
+				<option value="19">19
+				<option value="20">20
+			 </select>
+		      </form>
+		     </td>
+		  </tr>
+		</tr>
+	    </table>
+		<form name="Menu">
+			  <select onclick="GetFuncao"id="funcao"name="pages" size="1" onChange="vai(this);">
+			    <option value="fp_add">FP_ADD
+		        <option value="fp_sub">FP_SUB
+			    <option value="fp_mul">FP_MUL
+		       	<option value="fp_div">FP_DIV
+				<option value="fp_load">FP_LOAD
+				<option value="fp_store">FP_STORE
+				<option value="add">INT_ADD
+				<option value="sub">INT_SUB
+				<option value="mul">INT_MULT
+				<option value="div">INT_DIV
+				<option value="load">INT_LOAD
+				<option value="store">INT_STORE
+			 </select>
+		</form>
+		<form name="Menu">
+			  <select onclick="GetRD" id="rd"name="pages" size="1" onChange="vai(this);">
+			    <option value="1">f1
+		        <option value="2">f2
+			    <option value="3">f3
+		       	<option value="4">f4
+				<option value="5">f5
+				<option value="6">f6
+				<option value="7">f7
+				<option value="8">f8
+				<option value="9">f9
+				<option value="10">f10
+				<option value="11">f11
+				<option value="12">f12
+				<option value="13">f13
+				<option value="14">f14
+				<option value="15">f15
+				<option value="16">f16
+			 </select>
+		</form>
+		<form name="Menu">
+			  <select onclick="GetRS"id="rs"name="pages" size="1" onChange="vai(this);">
+				<option value="1">f1
+		        <option value="2">f2
+			    <option value="3">f3
+		       	<option value="4">f4
+				<option value="5">f5
+				<option value="6">f6
+				<option value="7">f7
+				<option value="8">f8
+				<option value="9">f9
+				<option value="10">f10
+				<option value="11">f11
+				<option value="12">f12
+				<option value="13">f13
+				<option value="14">f14
+				<option value="15">f15
+				<option value="16">f16
+			 </select>
+		</form>
+		<form name="Menu">
+			  <select onclick="GetRT"id="rt"name="pages" size="1" onChange="vai(this);">
+			    <option value="1">f1
+		        <option value="2">f2
+			    <option value="3">f3
+		       	<option value="4">f4
+				<option value="5">f5
+				<option value="6">f6
+				<option value="7">f7
+				<option value="8">f8
+				<option value="9">f9
+				<option value="10">f10
+				<option value="11">f11
+				<option value="12">f12
+				<option value="13">f13
+				<option value="14">f14
+				<option value="15">f15
+				<option value="16">f16
+			 </select>
+		</form>
+
+
+		<input onclick="controlador()" type="button" id="o" name="botao-ok" value="INSERIR INSTRUCAO">
+		<input type="button" name="botao-ok" value="REMOVER INSTRUCAO">
+		<label><input type="checkbox" id="cbox1" value="first_checkbox"> Adiantamento</label><br>
+
+		<script>
+			function GetLatenciaFP_ADD_SUB(){
+   			var ciclo = document.getElementById('ciclo_FP_ADD/SUB');	
+            return ciclo.value;
+	};
+
+	function GetLatenciaINT_DIV(){
+   			var ciclo = document.getElementById('ciclo_INT_DIV');
+            return ciclo.value;
+	};
+
+	function GetLatenciaFP_MULT(){
+   			var ciclo = document.getElementById('ciclo_FP_MULT');
+            return ciclo.value;
+	};
+
+	function GetLatenciaFP_DIV(){
+   			var ciclo = document.getElementById('ciclo_FP_DIV');
+            return ciclo.value;
+	};
+
+	function GetFuncao(){
+   			var func = document.getElementById('funcao');
+            return func.value;
+	};
+
+	function GetRD(){
+   			var rd = document.getElementById('rd');
+            return rd.value;
+	};
+
+	function GetRS(){
+   			var rs = document.getElementById('rs');
+            return rs.value;
+	};
+
+	function GetRT(){
+   			var rt = document.getElementById('rt');	
+            return rt.value;
+};  
+
+    function controlador() {
+            alert(GetLatenciaFP_ADD_SUB());
+            alert(GetLatenciaINT_DIV());
+            alert(GetLatenciaFP_MULT());
+            alert(GetLatenciaFP_DIV());
+            alert(GetFuncao());
+            alert(GetRD());
+            alert(GetRS());
+            alert(GetRT());
+    }
+	</script>
+		
+	</body>		
+</html>
+
+             
